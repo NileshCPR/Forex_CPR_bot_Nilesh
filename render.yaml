@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: forex-telegram-bot
+    runtime: docker
+    plan: free
+    env: docker
+    healthCheckPath: /health
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: PORT
+        value: 10000
+    autoDeploy: true
