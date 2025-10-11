@@ -25,7 +25,7 @@ logger = logging.getLogger(__name__)
 # ============================================
 # CONFIGURATION
 # ============================================
-TELEGRAM_BOT_TOKEN = os.environ.get('8446938916:AAHaoj7--rt_TaAxmEg80uJAtBdcNjckgSg')
+TELEGRAM_BOT_TOKEN = os.environ.get('8446938916:AAGlQFTVFwcbsQe2__T5729imMb4-83G3T4')
 PORT = int(os.environ.get('PORT', 10000))
 
 # Data file paths
@@ -614,4 +614,5 @@ if __name__ == '__main__':
     logger.info("=" * 50)
     
     # Run Flask web server (required for Render)
+
     app.run(host='0.0.0.0', port=PORT, debug=False)
